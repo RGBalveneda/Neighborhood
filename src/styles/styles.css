@@ -1,5 +1,5 @@
 body   {
-    background-color: rgba(156, 219, 55, 0.336);
+    background-color: rgba(192, 214, 241, 0.185);
     font-family: Arial, sans-serif;
     color: #333;
     margin: 0;
@@ -114,8 +114,8 @@ body   {
         
 
 .imgIcono   {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     padding-left: 20px;
 }
@@ -136,5 +136,100 @@ body   {
   font-weight: 100;
     font-size: 47px;
   font-style: normal;
-  color: rgb(34, 119, 27);
+  color: rgb(11, 14, 11);
 }
+
+
+.perfil {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 8px;
+}
+    
+.perfdiv1 {
+    grid-column: span 5 / span 5;
+}
+
+.perfdiv2 {
+    grid-column: span 3 / span 3;
+    grid-row: span 7 / span 7;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.perfdiv3 {
+    grid-column: span 5 / span 5;
+    grid-row-start: 9;
+}
+
+
+.Paginas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 8px;
+}
+    
+.pagdiv1 {
+    grid-column: span 5 / span 5;
+}
+
+.pagdiv3 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 9;
+}
+
+.pagdiv4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.pagdiv5 {
+    grid-column: span 5 / span 5;
+    grid-row: span 5 / span 5;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 8px;
+}
+    
+.condiv1 {
+    grid-column: span 7 / span 7;
+}
+
+.condiv2 {
+    grid-column: span 5 / span 5;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.condiv3 {
+    grid-column: span 3 / span 3;
+    grid-row: span 6 / span 6;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.condiv4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.condiv5 {
+    grid-column: span 7 / span 7;
+    grid-row-start: 9;
+}
+        
+        

@@ -8,90 +8,49 @@ import cerrar from '../assets/cerrar.png';
 
 
 const Header = () => {
+ 
+  const headerStyle = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start', // Alinea los elementos al inicio (arriba)
+  };
+
+  const imgIconoStyle = { // Estilo para la imagen de la izquierda
+    height: '130px',       // Ajusta según el tamaño de tu icono/logo
+    width: 'auto',
+    display: 'block', // Para asegurar que el Link no añada espacio extra
+  };
+
+  const rightIconsContainerStyle = { // Estilo para el contenedor de iconos de la derecha
+    display: 'flex',
+    alignItems: 'center', // Centra los iconos verticalmente si tienen alturas ligeramente diferentes
+    gap: '15px',          // Espacio entre los iconos de la derecha
+  };
+
+  const img3Style = { // Estilo para las imágenes de la derecha
+    height: '50px',     // Ajusta según el tamaño de tus iconos
+    width: '50px',
+    display: 'block', // Para asegurar que el Link no añada espacio extra
+  };
+
   return (
-    <StyledWrapper>
-      <div className="nav">
-
-             
-      <Link to="/"  >
-        <img src={icono} alt="Logo" className="imgIcono" />
+    <header style={headerStyle}>
+      <Link to="/">
+        <img src={icono} alt="Logo" style={imgIconoStyle} className="imgIcono" />
       </Link>
-              <div className="right-icons"> {/* Nuevo div contenedor */}
-          <Link to="/">
-            <img src={usuario} alt="Usuario" className="img3" />
-          </Link>
 
-          <Link to="/">
-            <img src={cerrar} alt="Cerrar" className="img3" />
-          </Link>
-        </div>
+      <div style={rightIconsContainerStyle} className="right-icons"> {/* Contenedor para los iconos de la derecha */}
+        <Link to="/perfil">
+          <img src={usuario} alt="Usuario" style={img3Style} className="img3" />
+        </Link>
 
-
-        </div>
-      
-    </StyledWrapper>
+        <Link to="/">
+          <img src={cerrar} alt="Cerrar" style={img3Style} className="img3" />
+        </Link>
+      </div>
+    </header>
   );
 };
-
-const StyledWrapper = styled.div`
-  .nav {
-    width: auto;
-    height: 100px;
-    background:rgb(70, 209, 52);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2em;
-  }
-
-  .container {
-    display: flex;
-    gap: 10px;
-    padding: 1em 2em;
-    position: relative;
-  }
-
-  .btn {
-    position: relative;
-    display: flex;
-    align-items: left;
-    padding: 1em 1.5em;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    font-weight: 500;
-    border-radius: 34px;
-  }
-
-  .btn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border: 2px solid transparent;
-    border-radius: 34px;
-    transition: all 0.4s ease;
-    pointer-events: none;
-  }
-    
-  .right-icons {
-    display: flex; /* Convierte este contenedor en flex para alinear sus hijos (los Links) */
-    gap: 0em; /* Espacio entre los iconos de usuario y cerrar */
-    margin-left: auto; /* <-- ESTO empuja este div (y su contenido) a la derecha */
-    padding: 0; /* Asegura que este div no tenga padding */
-   
-  }
-
-  .btn:hover::before {
-    border-color: #f5c518;
-    box-shadow: 0 0 10px rgba(245, 197, 24, 0.4);
-    transform: scale(1.05);
-  }
-
-  .btn:hover {
-    background: rgba(245, 197, 24, 0.1); /* dorado translúcido */
-    transform: translateY(-2px);
-  }
-`;
 
 
 

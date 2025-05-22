@@ -1,28 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from '../assets/1.jpg';
 
 const Card3 = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        
-        <img
-          src={img1}
-          className="image"
-        />
+        <div className="image"></div>
         <div className="content">
-         
+          
             <span className="title">
-              Mazatlan Sinaloa ‼️ 
-
+              Mazatlán Sinaloa 
+SERVICIO SOCIAL 
             </span>
        
           <p className="desc">
-
-Se registra fuerte persecución en estos momentos entre los elementos de los militares y civiles armados antes de subir el puente del conchi conductores que circulaban se detuvieron a juntar los ponchallantas fue con dirección a Urías ‼️
-Sigue nuestro canal de WhatsApp para más noticias 
-https://whatsapp.com/channel/0029VazDdirC6Zvpum89hB2N
+           Se pide la colaboración de la comunidad, para tratar de localizar a la motocicleta que aparece en la fotografía.
+La última vez que se vio fue en olas altas al quitarla a mano armada.
+Cualquier información al respecto, favor de comunicarse a este medio.
+Se dará $10,000 de recompensa al que de el lugar exacto donde está.
           </p>
           <a className="action" href="#">
             Leer mas
@@ -53,11 +48,11 @@ const StyledWrapper = styled.div`
     padding: 1.5rem;
   }
 
-  .image {
+   .image {
     object-fit: cover;
     border-radius: 2rem 2rem 0 0;
     width: 600px;
-    height: 400px;
+    height: 300px;
     background-color: rgba(90, 255, 13, 0.24);
   }
 

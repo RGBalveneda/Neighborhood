@@ -1,31 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Card1 = () => {
   return (
     <StyledWrapper>
       <div className="card">
+        <div className="image"></div>
+
         
         <div className="content">
           
             <span className="title">
               Mazatlan Sinaloa ‼️ 
-OFICINA DE LA SECRETARÍA DE SEGURIDAD PÚBLICA DEL GOBIERNO MUNICIPAL DE MAZATLÁN, COMUNICACIÓN SOCIAL 2024-2027, BOLETÍN DE PRENSA 260
             </span>
          
           <p className="desc">
             *Rescate múltiple en Isla de la Piedra activa protocolos de salvavidas en Mazatlán*
 _– Las personas puestas a salvo son valoradas en el lugar de la emergencia; una de ellas fue llevada a un hospital_
-Mazatlán, Sinaloa, 13 de mayo de 2025.– El reporte de un rescate múltiple en las playas de la Isla de la Piedra, activó la tarde de este martes los protocolos de apoyo y búsqueda de rescate de los elementos de la Secretaría de Seguridad Pública Municipal, a través del Escuadrón de Salvamento Acuático y personal de ENSAR de la Secretaría de Marina.
-Gustavo Espinoza Bastidas, titular del grupo acuático, informó que una corriente marina formada cerca de un barco hundido en los límites del Hotel Estrella Del Mar, jaló a 11 personas, quienes se encontraban en una zona no apta para bañistas, por lo que la oportuna respuesta de los salvavidas logró poner a 10 de ellos en tierra firme, quienes recibieron valoración médica, pero por desgracia uno se perdió en el oleaje.
-Ante la situación, elementos de las diversas dependencias de auxilio y seguridad, en punto de las 14:20 horas, activaron los protocolos de búsqueda de quien identificaron como Brayan "N", de 17 años, en tanto Arely "N", de 18 años, fue trasladada al embarcadero para ser llevada a un hospital, mientras que el resto permaneció en el lugar
+ punto de las 14:20 horas, activaron los protocolos de búsqueda de quien identificaron como Brayan "N", de 17 años, en tanto Arely "N", de 18 años, fue trasladada al embarcadero para ser llevada a un hospital, mientras que el resto permaneció en el lugar
           </p>
-          <a className="action" href="#">
+          <Link to="/pagina1" className="action">
             Leer mas
             <span aria-hidden="true">
               →
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </StyledWrapper>
@@ -46,14 +46,15 @@ const StyledWrapper = styled.div`
   }
 
   .content {
-    padding: 1.5rem;
+    padding: 1.1rem;
   }
 
   .image {
     object-fit: cover;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(239, 205, 255);
+    border-radius: 2rem 2rem 0 0;
+    width: 600px;
+    height: 300px;
+    background-color: rgba(90, 255, 13, 0.24);
   }
 
   .title {
