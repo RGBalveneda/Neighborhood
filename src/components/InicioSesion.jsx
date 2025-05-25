@@ -1,31 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-
-
 
 const Sesion = () => {
+  const [email, setEmail] = useState('');
+  const [contrasena, setContrasena] = useState('');
+  const navigate = useNavigate();
+
+  const handleLogin = (e) => {
+    e.preventDefault(); // Prevenir recarga
+
+    const correoValido = 'usuario@ejemplo.com';
+    const contrasenaValida = '1234';
+
+    if (email === correoValido && contrasena === contrasenaValida) {
+      navigate('/Principal');
+    } else {
+      alert('Email o contraseña incorrectos');
+    }
+  };
+
   return (
     <StyledWrapper>
       <div className="form-box">
-        <form className="form">
-          <span className="title">Iniciar sesion</span>
-          <span className="subtitle">Todo es mejor estando conectados!</span>
+        <form className="form" onSubmit={handleLogin}>
+          <span className="title">Iniciar sesión</span>
+          <span className="subtitle">¡Todo es mejor estando conectados!</span>
           <div className="form-container">
-            <input type="email" className="input" placeholder="Email" />
-            <input type="password" className="input" placeholder="Contraseña" />
+            <input
+              type="email"
+              className="input"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              className="input"
+              placeholder="Contraseña"
+              value={contrasena}
+              onChange={(e) => setContrasena(e.target.value)}
+            />
           </div>
-          <Link to="Principal">
-          <button>Iniciar sesion</button>
-          </Link>
+          <button type="submit">Iniciar sesión</button>
         </form>
         <div className="form-section">
-          <p>Aun no te has registrado? Hazlo ahora mismo! <Link to="registro">Registrarse</Link> </p>
+          <p>¿Aún no te has registrado? ¡Hazlo ahora mismo! <Link to="/registro">Registrarse</Link></p>
         </div>
       </div>
     </StyledWrapper>
   );
-}
+};
 
 
 const StyledWrapper = styled.div`

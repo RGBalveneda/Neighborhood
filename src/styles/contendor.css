@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Aplica márgenes y ancho máximo directamente a cada sección si no hay contenedor */
+.condiv {
+  max-width: 3000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.condiv-titulo {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: #cc0000;
+  text-align: center;
+  margin-left: 300px;
+    margin-right: 300px;
+}
+
+.condiv-texto {
+  text-align: center;
+}
+
+.condiv-texto h3 {
+  font-size: 1.1em;
+  line-height: 1.6;
+  font-weight: normal;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.condiv-texto a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.condiv-texto a:hover {
+  text-decoration: underline;
+}
+
+.img-noticia {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.fondo3 {
+  background-image: url('/src/assets/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  
+}

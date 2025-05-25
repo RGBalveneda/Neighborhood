@@ -7,8 +7,8 @@ import Perfil from "./pages/perfil.jsx";
 import Contenido1 from "./pages/contenido1.jsx";
 import Contenido2 from "./pages/contenido2.jsx";
 import Contenido3 from "./pages/contenido3.jsx";
-import Card from "./components/404.jsx";
-import Buscador from "./components/buscador.jsx";
+import NotFound from "./pages/404.jsx";
+import Buscador from "./pages/buscador.jsx";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
           <Route path="/pagina2" element={<Contenido2/>} />
           <Route path="/pagina3" element={<Contenido3/>} />
           <Route path="/buscador" element={<Buscador/>} />
-          <Route path="*" element={<Card/>} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </BrowserRouter>
     </div>

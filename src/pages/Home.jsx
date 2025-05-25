@@ -1,13 +1,12 @@
 
 import React from 'react'
-
 import '../styles/styles.css'
 import Sesion from '../components/InicioSesion.jsx'
 import icono from '../assets/icon.png'
 
 function App() {
   return (
-
+<div className='fondo'>
 <div className='parent'>
     <div className='div1'>
       <img className='img1' src={icono} />
@@ -16,6 +15,7 @@ function App() {
       <Sesion />
     </div>
     <div className='div3'></div>
+</div>
 </div>
     
     

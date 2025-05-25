@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/styles.css';
 import icono from '../assets/icon.png';
 import { Link } from 'react-router-dom';
-import Header from '../components/Header.jsx';
+import HeaderP from '../components/HeaderPrincipal.jsx';
 import Footer from '../components/Footer.jsx';
 import Card1 from '../components/Contenedor.jsx';
 import Card2 from '../components/Contenedor3.jsx';
@@ -13,16 +13,16 @@ import Input from '../components/buscador.jsx';
 
 export default function Principal() {
     return (
-
+    <div className='fondo2'>
 <div className="principal">
     <div className="pdiv1">
-        <Header />
+        <HeaderP />
     </div>
     <div className="pdiv2">
     <h1 className="h1d">¿Necesitas ayuda? Encuéntrala aquí, muy muy cerca de ti!. </h1>
     </div>
     <div className="pdiv3">
-    <Link to="/pagina1">
+    <Link to="/buscador">
         <Input />
     </Link>
     </div>
@@ -40,7 +40,7 @@ export default function Principal() {
     </div>
 </div>
 
-    
+    </div>
     );
 }
     

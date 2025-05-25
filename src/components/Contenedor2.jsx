@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from '../assets/1.jpg';
+import img1 from '../assets/image.webp';
+import { Link } from 'react-router-dom';
 
 const Card2 = () => {
   return (
@@ -14,22 +15,22 @@ const Card2 = () => {
         <div className="content">
          
             <span className="title">
-              Mazatlan Sinaloa ‼️ 
+              Asesinan a balazos a motociclista en el bulevar Agricultores en Culiacán 
 
             </span>
        
           <p className="desc">
 
-Se registra fuerte persecución en estos momentos entre los elementos de los militares y civiles armados antes de subir el puente del conchi conductores que circulaban se detuvieron a juntar los ponchallantas fue con dirección a Urías ‼️
-Sigue nuestro canal de WhatsApp para más noticias 
-https://whatsapp.com/channel/0029VazDdirC6Zvpum89hB2N
+Redacción / El Sol De Sinaloa
+
+Culiacán, Sin.- Un vecino del sector Las coloradas, en la colonia Renato Vega Amador, fue asesinado la tarde de este sábado cuando circulaba a bordo de una motocicleta sobre el bulevar Agricultores, en la colonia Vista Hermosa, al oriente de la ciudad.
           </p>
-          <a className="action" href="#">
+          <Link to="/pagina1" className="action">
             Leer mas
             <span aria-hidden="true">
               →
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </StyledWrapper>
@@ -58,7 +59,7 @@ const StyledWrapper = styled.div`
     border-radius: 2rem 2rem 0 0;
     width: 600px;
     height: 300px;
-    background-color: rgba(90, 255, 13, 0.24);
+    background-color: rgba(18, 212, 226, 0.62);
   }
 
   .title {

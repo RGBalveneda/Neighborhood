@@ -1,30 +1,27 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import img from '../assets/gato.jpg'; // Assuming you have an image at this path
+import { Link } from 'react-router-dom';
 const Card3 = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="image"></div>
+        <img className="image" src={img} alt="Gato" />
         <div className="content">
           
             <span className="title">
-              Mazatlán Sinaloa 
-SERVICIO SOCIAL 
+Ha visto usted a este gato?
             </span>
        
           <p className="desc">
-           Se pide la colaboración de la comunidad, para tratar de localizar a la motocicleta que aparece en la fotografía.
-La última vez que se vio fue en olas altas al quitarla a mano armada.
-Cualquier información al respecto, favor de comunicarse a este medio.
-Se dará $10,000 de recompensa al que de el lugar exacto donde está.
+Pues ya lo vio, Felicidades!
           </p>
-          <a className="action" href="#">
+          <Link to="/pagina3" className="action">
             Leer mas
             <span aria-hidden="true">
               →
             </span>
-          </a>
+          </Link>
         </div>
       </div>
     </StyledWrapper>
@@ -53,7 +50,7 @@ const StyledWrapper = styled.div`
     border-radius: 2rem 2rem 0 0;
     width: 600px;
     height: 300px;
-    background-color: rgba(90, 255, 13, 0.24);
+    background-color: rgba(18, 212, 226, 0.62);
   }
 
   .title {
@@ -83,6 +80,8 @@ const StyledWrapper = styled.div`
     padding: 4px 8px;
     border-radius: 4px;
   }
+
+
 
   .action span {
     transition: .3s ease;

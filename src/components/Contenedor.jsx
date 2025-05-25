@@ -1,26 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import img from '../assets/Balatro.jpg'; // Import the image you want to use
 
 const Card1 = () => {
   return (
     <StyledWrapper>
       <div className="card">
-        <div className="image"></div>
+        <img className='image' src={img} alt="Balatro" />
 
         
         <div className="content">
           
             <span className="title">
-              Mazatlan Sinaloa ‼️ 
+              Uno de los juegos más exitosos del 2024 vuelve a estar en problemas. Ahora es YouTube la que ha calificado injustamente a Balatros como un juego de "contenido para adultos"
             </span>
          
           <p className="desc">
-            *Rescate múltiple en Isla de la Piedra activa protocolos de salvavidas en Mazatlán*
-_– Las personas puestas a salvo son valoradas en el lugar de la emergencia; una de ellas fue llevada a un hospital_
- punto de las 14:20 horas, activaron los protocolos de búsqueda de quien identificaron como Brayan "N", de 17 años, en tanto Arely "N", de 18 años, fue trasladada al embarcadero para ser llevada a un hospital, mientras que el resto permaneció en el lugar
+LocalThunk ha vivido un periplo curioso con Balatro. Este título, que fue desarrollado por una sola persona, explotó en popularidad tras su lanzamiento en febrero de 2024 y ha reunido una cantidad ingente de fans. 
           </p>
-          <Link to="/pagina1" className="action">
+          <Link to="/pagina2" className="action">
             Leer mas
             <span aria-hidden="true">
               →
@@ -54,7 +53,7 @@ const StyledWrapper = styled.div`
     border-radius: 2rem 2rem 0 0;
     width: 600px;
     height: 300px;
-    background-color: rgba(90, 255, 13, 0.24);
+    background-color: rgba(18, 212, 226, 0.62);
   }
 
   .title {

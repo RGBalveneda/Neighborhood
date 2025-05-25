@@ -152,6 +152,9 @@ body   {
 }
 
 .perfdiv2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     grid-column: span 3 / span 3;
     grid-row: span 7 / span 7;
     grid-column-start: 2;
@@ -232,4 +235,20 @@ body   {
     grid-row-start: 9;
 }
         
-        
+.fondo {
+  background-image: url('/src/assets/fondo3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.fondo2 {
+  background-image: url('/src/assets/fondo7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  
+}

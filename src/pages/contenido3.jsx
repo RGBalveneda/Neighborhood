@@ -1,24 +1,31 @@
 import React from 'react';
-import img from '../assets/1.jpg';
+import img1 from '../assets/gato2.jpg';
+import '../styles/contendor.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
+export default function Contenido1() {
+  return (
+    <div className="fondo3">
+    <>
+      <div className="condiv condiv-header"><Header /></div>
 
-export default function Contenido3() {
-    return (
-      
-<div class="pagina">
-    <div class="pagdiv1">
-        <img class="img1" src={img} />
+      <div className="condiv condiv-titulo">Ha visto alguna vez usted a este gato?</div>
+
+      <div className="condiv condiv-texto">
+        <h3>
+Pues ya lo vio, Felicidades!!
+<br /><br />
+<br /><br />       
+        </h3>
+      </div>
+
+      <div className="condiv condiv-imagen">
+        <img src={img1} alt="Imagen de la noticia" className="img-noticia" />
+      </div>
+
+      <div className="condiv condiv-footer"><Footer /></div>
+    </>
     </div>
-    <div class="pagdiv3">
-
-    </div>
-    <div class="pagdiv4">
-
-    </div>
-    <div class="pagdiv5">
-
-    </div>
-</div>
-    
-    );
+  );
 }

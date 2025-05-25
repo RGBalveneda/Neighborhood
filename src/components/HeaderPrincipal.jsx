@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Header = () => {
+const HeaderP = () => {
 
   const navigate = useNavigate();
 
@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <header style={headerStyle}>
       
-        <img src={icono} alt="Logo" onClick={() => navigate(-1)} style={imgIconoStyle} className="imgIcono" />
+        <img src={icono} alt="Logo"  style={imgIconoStyle} className="imgIcono" />
       
 
       <div style={rightIconsContainerStyle} className="right-icons"> {/* Contenedor para los iconos de la derecha */}
@@ -60,4 +60,4 @@ const Header = () => {
 
 
 
-export default Header;
+export default HeaderP;
